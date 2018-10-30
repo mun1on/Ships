@@ -157,7 +157,6 @@ public class RegisterPanel extends JPanel implements ActionListener
                         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shipsdb?useSSL=false", "root", "root");
                         if(!new Driver().checkIfExist(con, "login", user))
                         {
-                            con.close();
                             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shipsdb?useSSL=false", "root", "root");
                             System.out.println("THIS IS HAPPENING!!!");
 
